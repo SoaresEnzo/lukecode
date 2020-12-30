@@ -6,12 +6,14 @@ import yoda from '../../assets/images/characters/yoda.png'
 
 import separator from '../../assets/images/separator.svg'
 
+import CardCategory from '../../components/CardCategory';
 import Animation from '../../components/Animation'
 import CardCourse from '../../components/CardCourse'
 
 import courseReact from '../../assets/images/courses/react-redux.jpg';
 import coursePHP from '../../assets/images/courses/php.jpg';
 import courseFlutter from '../../assets/images/courses/flutter.jpg';
+
 
 
 const Home = () => {
@@ -33,6 +35,10 @@ const Home = () => {
 
                             <button>
                                 INSCREVA-SE
+                            </button>
+
+                            <button className="btn-menu">
+                                <i className="fas fa-bars" />
                             </button>
 
                         </nav>
@@ -76,15 +82,12 @@ const Home = () => {
                 <div className="container">
                     <h2>O que oferecemos para você</h2>
                     <section className="categories-container">
-                    <div className="category-card">
-                        <div className="category-card-image">
-
-                        </div>
-                        <div className="category-card-content">
-                            <h4>htrhtr</h4>
-                            <p>trhrhtrh</p>
-                        </div>
-                    </div>
+                        <CardCategory title="Back-end" courses="22" color="red" />
+                        <CardCategory title="Banco de dados" courses="2" color="yellow" />
+                        <CardCategory title="Segurança" courses="22" color="purple" />
+                        <CardCategory title="Mobile" courses="18" color="blue" />
+                        <CardCategory title="Front-end" courses="14" color="green" />
+                        <CardCategory title="Cloud Computing" courses="2" color="orange" />
                     </section>
                 </div>
             </div>
@@ -93,3 +96,6 @@ const Home = () => {
 }
 
 export default Home;
+//03:01:00
+// https://zoom.us/rec/play/_T18JPmzvVOtaLnEXJ3A-650pogGRkWP6OxaRIm5O_SRM1PL0XdIlcGOcTW3yMAbim84-fK5ob096u3O.MpU6w31KDhrsS1PD
+// uV+G+1f1
