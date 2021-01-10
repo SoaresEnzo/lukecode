@@ -22,7 +22,7 @@ const Home = () => {
 
             <Animation />
             <div className="section-1">
-                <div className="container">
+                <div className="box">
 
                     <header className="header">
                         <h2>Luke code</h2>
@@ -58,7 +58,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="section-2">
-                <div className="container">
+                <div className="box">
                     <h2>+3 Cursos Completos</h2>
                     <p>Na Luke Code, você tem acesso a 3 cursos gratuitos,basta se cadastrar na plataforma</p>
                     <section className="card-container">
@@ -79,7 +79,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="section-3">
-                <div className="container">
+                <div className="box">
                     <h2>O que oferecemos para você</h2>
                     <section className="categories-container">
                         <CardCategory title="Back-end" courses="22" color="red" />
@@ -91,6 +91,14 @@ const Home = () => {
                     </section>
                 </div>
             </div>
+            <div className="section-4">
+                <div className="box">
+                    <h2>Depoimentos</h2>
+                </div>
+            </div>
+            <footer>
+                &copy; Luke Code - Alguns direitos reservados - {new Date().getFullYear()}
+            </footer>
         </>
     )
 }
