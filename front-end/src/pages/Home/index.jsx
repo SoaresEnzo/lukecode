@@ -2,9 +2,12 @@ import React from 'react';
 
 import './styles.css'
 
-import yoda from '../../assets/images/characters/yoda.png'
+import yoda from '../../assets/images/characters/yoda.png';
 
-import separator from '../../assets/images/separator.svg'
+import separator from '../../assets/images/separator.svg';
+import markLeft from '../../assets/images/mark-left.svg';
+import markRight from '../../assets/images/mark-right.svg';
+import userReviewImage from '../../assets/images/users/user.png';
 
 import CardCategory from '../../components/CardCategory';
 import Animation from '../../components/Animation'
@@ -94,16 +97,28 @@ const Home = () => {
             <div className="section-4">
                 <div className="box">
                     <h2>Depoimentos</h2>
+                    <div className="image-review">
+                        <img src={userReviewImage} alt="user" width="300" />
+                    </div>
+                    <div className="review">
+                        <img src={markLeft} alt="" />
+                        <p>Professor extremamente didático e com amplos conhecimentos <br/>
+                            e o curso tem conteúdo que permite exercitar o que é ensinado!</p>
+                        <img src={markRight} alt="" />
+                    </div>
+                    <div className="user-review">
+                        <h4>Joaquim</h4>
+                    </div>
                 </div>
             </div>
             <footer>
-                &copy; Luke Code - Alguns direitos reservados - {new Date().getFullYear()}
+                <div className="box">
+                    &copy; Luke Code - Alguns direitos reservados - {new Date().getFullYear()}
+                </div>
+
             </footer>
         </>
     )
 }
 
 export default Home;
-//03:01:00
-// https://zoom.us/rec/play/_T18JPmzvVOtaLnEXJ3A-650pogGRkWP6OxaRIm5O_SRM1PL0XdIlcGOcTW3yMAbim84-fK5ob096u3O.MpU6w31KDhrsS1PD
-// uV+G+1f1
